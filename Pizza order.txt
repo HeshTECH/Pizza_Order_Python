@@ -1,0 +1,23 @@
+print("Welcome to Python Pizza")
+pizzaSize=input("Which pizza you would like to order? S, M, L:")
+if pizzaSize == "L":
+    print("25")
+    bill=25
+if pizzaSize == "M":
+    print("20")
+    bill=20
+if pizzaSize == "S":
+    print("15")
+    bill=15
+    
+extra_pep=input("Would like to add extra pepproni?Yes, No")
+
+if extra_pep== "Yes":
+    bill+=2
+else:
+    bill+=3
+extra_cheese=input("would like to add extra cheese?Y, N")
+if extra_cheese=="Y":
+    bill+=1
+    
+print(f"your final bill is $ {bill}")
